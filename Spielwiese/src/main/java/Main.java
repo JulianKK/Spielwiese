@@ -1,5 +1,6 @@
 package main.java;
 import javafx.application.Application;
+import javafx.embed.swt.FXCanvas;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
@@ -11,14 +12,14 @@ public class Main extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-    
+ 
     @Override
     public void start(Stage primaryStage) {
         primaryStage.setTitle("Hello World!");
         Button btn = new Button();
         btn.setText("Say 'Hello World'");
         btn.setOnAction(new EventHandler<ActionEvent>() {
- 
+        	FXCanvas canvas = new fxcanvas;
             @Override
             public void handle(ActionEvent event) {
                 System.out.println("Hello World!");
